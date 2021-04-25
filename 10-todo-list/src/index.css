@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d7dadc;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  text-align: center;
+  width: 550px;
+  margin: 5rem auto;
+  background-color: white;
+  min-height: 150px;
+}
+
+.todo-container{
+  padding: 1rem 2rem;
+}
+
+input, .btn-form {
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  border: transparent;
+}
+form{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+input{
+  background-color: #F1F5F8;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.btn-form{
+  background-color: #79c0f2;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.btn-form:hover{
+  background-color: #49A7E9;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-list{
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.todo-item{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  column-gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.todo-item:hover{
+  background-color: #d7dadc;
+  border-radius: 5px;
+}
+
+.edit{
+  color: greenyellow;
+}
+.edit:hover{
+  color: rgb(154, 216, 61);
+  cursor: pointer;
+}
+
+.delete{
+  color: rgb(203, 40, 40)
+}
+
+.delete:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.btn-action{
+  border: none;
+  background-color: transparent;
+}
+
+.notshow{
+  display: none;
+}
+
+.msg-update, .msg-add, .msg-delete{
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.msg-add{
+  background-color: #aaeeaa;
+}
+
+.msg-update{
+  background-color: #ffd280;
+}
+
+.msg-delete{
+  background-color: #ff8080;
+  color: white;
+}
